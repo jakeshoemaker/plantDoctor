@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Header from './components/Header/Header';
 
 
 class App extends Component {
@@ -6,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <p> test </p>
+        <Header/>
       </div>
       //<Container>
         //  <Navbar expand="lg" variant="light" bg="light">
