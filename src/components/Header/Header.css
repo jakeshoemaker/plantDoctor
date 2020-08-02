@@ -6,14 +6,21 @@ header {
     box-shadow: var(--box-shadow);
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
     justify-content: space-between;
+    background-color: darkslategray
+}
+
+.plantButton {
+    margin-top: 10px;
 }
 
 .logo-text {
+    color: #9ed18a;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     display: flex;
     align-items: center;

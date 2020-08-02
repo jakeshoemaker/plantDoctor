@@ -1,5 +1,6 @@
 /** @jsx jsx **/
 import { jsx } from 'theme-ui';
+import { Button } from 'react-bootstrap';
 import "./Header.css"
 
 const Header = () => {
@@ -9,6 +10,7 @@ const Header = () => {
             <img src={require('../../assets/hnet.com-image.ico')} alt='logo'/>
             plant doctor
             </h1>
+            <Button className="plantButton" variant="success">plants</Button>{' '}
         </header>
     );
 };

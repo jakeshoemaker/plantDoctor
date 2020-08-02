@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Header from './components/Header/Header';
+import MoistureLevel from './components/MoistureLevel/MoistureLevel';
 
 
 class App extends Component {
@@ -8,6 +9,7 @@ class App extends Component {
     return (
       <div>
         <Header/>
+        <MoistureLevel />
       </div>
       //<Container>
         //  <Navbar expand="lg" variant="light" bg="light">
