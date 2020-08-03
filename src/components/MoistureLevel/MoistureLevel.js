@@ -3,17 +3,22 @@ import React from 'react';
 import { jsx } from 'theme-ui';
 import "./MoistureLevel.css"
 
-class MoistureLevel extends React.Component {
-    componentDidMount() {
-        const apiUrl = 'http://localhost:1234/api/moisture';
-        fetch(apiUrl)
-            .then((res) => res.json())
-            .then((data) => console.log('This is your data', data));
-    }
-    render() {
-        return <h1> my component has mounted, check the console</h1>;
-    }
-}
 
+const MoistureLevel = ({ sensor_data }) => {
+    return (
+        <div>
+            <center><h1>Moisture Level</h1></center>
+            {sensor_data.map((data) => (
+                <div class='card'>
+                    <div class='card-body'>
+                        <h5 class='card-title'> {data.plant}</h5>
+                        <h6 class='card-subtitle mb-2'>{data.moisture}</h6>
+                        <h6 class='card-text'>{data.time}</h6>
+                    </div>
+                </div>
+            ))}
+        </div>
+    )
+};
 
-export default MoistureLevel;
+export default MoistureLevel

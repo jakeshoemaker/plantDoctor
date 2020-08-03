@@ -2,11 +2,13 @@
 const express = require('express')
 const app = express()
 const db = require('./database.js');
+const cors = require('cors');
 
 // server port
 const PORT = 1234
 
 // start server
+app.use(cors());
 app.listen(PORT, () => {
     console.log("server listening on port: {}", PORT);
 });
