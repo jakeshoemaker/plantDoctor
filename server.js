@@ -28,7 +28,6 @@ app.get('/api/moisture', (req, res, next) => {
             return;
         }
         res.json({
-            "message": "success",
             "data": rows
         })
     });
