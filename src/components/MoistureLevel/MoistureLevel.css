@@ -1,0 +1,49 @@
+.card {
+    padding-bottom: 10px;
+    text-align: left;
+    border-radius: 25px;
+    margin-left: 75px;
+    margin-top: 75px;
+}
+
+
+.container-fluid {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 30px;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #20975f
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+li {
+    display: grid;
+    grid-gap: 1.75em;
+    align-items: start;
+    font-size: 1.5rem;
+}
+
+.text-title {
+    color: #142e25;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    display: flex;
+    text-align: left;
+}
+
+.text {
+    font-size: ;
+}

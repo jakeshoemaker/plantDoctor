@@ -11,8 +11,10 @@
 # production
 /build
 
+# dbs
+.db
+
 # misc
-sensor-data.db
 .DS_Store
 .env.local
 .env.development.local

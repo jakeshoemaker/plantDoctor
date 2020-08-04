@@ -18,6 +18,7 @@ def main():
     # read digital value from pin 1 
     moisture = 100 - (100 * grovepi.analogRead(1)/1023)
     
+    
     # connect to sqlite db, if no db is present then one will be created
     try:
         connection = sqlite3.connect("sensor-data.db")
@@ -46,7 +47,7 @@ def main():
                             (plant, moisture, time)
                             VALUES (?, ?, ?);'''
         
-        cursor.execute(sqlite_insert, (plant, moisture, current_time))
+        cursor.execute(sqlite_insert, (plant, "{0:.2}".format(moisture), current_time))
         connection.commit()
         print("Successfully entered row into sensor-db")
 

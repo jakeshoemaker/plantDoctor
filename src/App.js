@@ -8,7 +8,12 @@ class App extends Component {
     return (
       <div className='app'>
         <Header/>
-        <MoistureLevel />
+        <div class="row">
+          <div class="col-sm-4">
+          <MoistureLevel />
+          </div>
+        </div>
+        
       </div>
     )
   }
