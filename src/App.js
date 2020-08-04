@@ -12,6 +12,9 @@ class App extends Component {
           <div class="col-sm-4">
           <MoistureLevel />
           </div>
+          <div class="col-sm-8">
+          <Chart />
+          </div>
         </div>
         
       </div>

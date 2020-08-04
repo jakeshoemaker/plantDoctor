@@ -1,29 +1,28 @@
 .card {
-    padding-bottom: 10px;
+    padding-left: 10px;
     text-align: left;
-    border-radius: 25px;
-    margin-left: 75px;
+    border-radius: 20px;
+    margin-left: 50px;
     margin-top: 75px;
+    padding-right: 500px;
+    background-color: rgb(74, 185, 133);
 }
 
 
-.container-fluid {
+.container {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    margin-right: 30px;
-    margin-left: 40px;
-    margin-top: 15px;
     margin-bottom: 15px;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #20975f
+    
+    
 }
 
 ol,
 ul {
-    margin: 0;
+    margin: 5px;
     padding: 0;
     list-style: none;
     display: grid;
@@ -37,13 +36,23 @@ li {
     font-size: 1.5rem;
 }
 
-.text-title {
-    color: #142e25;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    display: flex;
-    text-align: left;
+	
+h1 {
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    font-size: 65px;
 }
 
-.text {
-    font-size: ;
+h3 {
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    line-height: 35px;
+    padding-bottom: 10px
+}
+ 
+p {
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 25px;
+    padding-bottom: 10px;
+    padding-left: 50px;
 }

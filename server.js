@@ -49,6 +49,21 @@ app.get('/api/moisture/hr', (req, res, next) => {
     });
 });
 
+app.get('/api/moisture/6hr', (req, res, next) => {
+    var sql = "select * from moisture_level order by time desc limit 24";
+    var params = [];
+    db.all(sql, params, (err, rows) => {
+        if (err) {
+            res.status(400).json({"error": err.message});
+            return;
+        }
+        res.json({
+            "message": "success",
+            "data": rows
+        })
+    });
+});
+
 
 // default response to other requests
 app.use(function(req, res){

@@ -19,16 +19,17 @@ class MoistureLevel extends Component {
         // We're using axios instead of Fetch
         axios
           // The API we're requesting data from
-          .get("http://172.20.3.232:1234/api/moisture")
-          .then(res => {
+          //.get("http://172.20.3.232:1234/api/moisture")
+          .get("http://localhost:1234/api/moisture")
+          /*.then(res => {
               this.setState({
                   sensor_data: res.data.data,
                   isLoading: false
               });
-          })
-          /* Once we get a response, we'll map the API endpoints to our props
+          }) */
+           //Once we get a response, we'll map the API endpoints to our props
           .then(res =>
-            res.data.results.map(sens_data => ({
+            res.data.data.map(sens_data => ({
               plant: `${sens_data.plant}`,
               moisture: `${sens_data.moisture}`,
               time: `${sens_data.time}`
@@ -42,7 +43,7 @@ class MoistureLevel extends Component {
               isLoading: false
             });
           })
-          */
+          
           // We can still use the `.catch()` method since axios is promise-based
           .catch(error => this.setState({ error, isLoading: false }));
       }
@@ -56,18 +57,18 @@ class MoistureLevel extends Component {
         return (
           <React.Fragment>
             <div class="card">
-            <h2>latest statistics </h2>
+            <h1>latest statistics: </h1>
             <div>
               {!isLoading ? (
                 sensor_data.map(sens_data => {
                   const { plant, moisture, time } = sens_data;
                   return (
-                    <div class="container-fluid" key={plant}>
+                    <div class="container" key={plant}>
                       <ul>
-                      <h1 className="text-title">{plant}</h1>
-                      <li><h3 className="text">Plant Type: elephant ear</h3></li>
-                      <li><h3 className="text">Moisture Level: {100 - moisture}% moisture </h3></li>
-                      <li><h3 className="text">Scan Time: {time}</h3></li>
+                      <h3 className="text-title">Name: {plant}</h3>
+                      <p className="text"><b>Plant Type:</b> elephant ear</p>
+                      <p className="text"><b>Moisture Level:</b> {100 - moisture}% moisture </p>
+                      <p className="text"><b>Scan Time:</b> {time}</p>
                       
                       </ul>
                     </div>
