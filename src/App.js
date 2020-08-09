@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header/Header';
+import Chart from './components/Chart/Chart'
 import MoistureLevel from './components/MoistureLevel/MoistureLevel';
 
 

@@ -19,8 +19,8 @@ class MoistureLevel extends Component {
         // We're using axios instead of Fetch
         axios
           // The API we're requesting data from
-          //.get("http://172.20.3.232:1234/api/moisture")
-          .get("http://localhost:1234/api/moisture")
+          .get("http://172.20.3.232:1234/api/moisture")
+          //.get("http://localhost:1234/api/moisture")
           /*.then(res => {
               this.setState({
                   sensor_data: res.data.data,
