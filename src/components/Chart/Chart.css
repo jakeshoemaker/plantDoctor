@@ -1,0 +1,28 @@
+h1 {
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    font-size: 65px;
+}
+
+h3 {
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    line-height: 35px;
+    padding-bottom: 10px
+}
+ 
+p {
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 25px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+}
+
+.container {
+    border-radius: 10px;
+    position: relative;
+    overflow: auto;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
