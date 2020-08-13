@@ -2,6 +2,8 @@
 
 ## an iot powered full stack app made with love
 
+![](img/plant-doc.PNG)
+
 I am creating a web site where you can monitor the health of any plant! 
     - never forget to water your plant (or remember that it doesnt need any more water)
     - the application will be configurable to report on more than one plant, if needed
@@ -32,4 +34,3 @@ Launches the test runner in the interactive watch mode.<br />
 ### `npm run build`
 Builds the app for production to the `build` folder.<br />
 
-![](img/plant-doc.PNG)
