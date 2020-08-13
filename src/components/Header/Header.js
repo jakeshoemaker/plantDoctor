@@ -10,7 +10,12 @@ const Header = () => {
             <img src={require('../../assets/hnet.com-image.ico')} alt='logo'/>
             plant doctor
             </h3>
-            <Button className="plantButton" variant="success">plants</Button>{' '}
+            <div className="buttons"> 
+            <Button className="plantButton" variant="success">plants</Button>
+            <Button className="codeButton" variant="success" href="https://github.com/jakeshoemaker/plantDoctor">code</Button>
+            <Button className="aboutMeButton" variant="success" href="https://jakeshoemaker.github.io/portfolio">about me</Button>
+            </div>
+            {' '}
         </header>
     );
 };

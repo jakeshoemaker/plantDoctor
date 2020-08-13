@@ -1,15 +1,19 @@
-.card {
+.info-container {
     padding-left: 10px;
     text-align: left;
     border-radius: 20px;
     margin-left: 50px;
-    margin-top: 75px;
+    margin-top: 10px;
     padding-right: 500px;
     background-color: rgb(74, 185, 133);
 }
 
+.card-container {
+    padding: 30px 20px 10px 10px;
+}
 
-.container {
+
+.container1 {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -38,6 +42,8 @@ li {
 h1 {
     font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
     font-size: 65px;
+    padding-left: 75px;
+    padding-bottom: 0px;
 }
 
 h3 {

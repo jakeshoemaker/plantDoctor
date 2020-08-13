@@ -17,6 +17,24 @@ header {
 
 .plantButton {
     margin-top: 10px;
+    background-color: #158467;
+    border-color: transparent;
+}
+.aboutMeButton {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #065446;
+    border-color: transparent;
+}
+.codeButton {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #197163;
+    border-color: transparent;
+}
+
+p {
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
 }
 
 .logo-text {

@@ -19,8 +19,8 @@ class MoistureLevel extends Component {
         // We're using axios instead of Fetch
         axios
           // The API we're requesting data from
-          .get("http://172.20.3.232:1234/api/moisture")
-          //.get("http://localhost:1234/api/moisture")
+          //.get("http://172.20.3.232:1234/api/moisture")
+          .get("http://localhost:1234/api/moisture")
           /*.then(res => {
               this.setState({
                   sensor_data: res.data.data,
@@ -56,9 +56,10 @@ class MoistureLevel extends Component {
         const { isLoading, sensor_data } = this.state;
         return (
           <React.Fragment>
-            <div class="card">
-            <h1>latest statistics: </h1>
-            <div>
+            
+            <div className="card-container">
+            <h1> plant: </h1>
+            <div className='info-container'>
               {!isLoading ? (
                 sensor_data.map(sens_data => {
                   const { plant, moisture, time } = sens_data;
